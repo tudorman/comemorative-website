@@ -7,56 +7,78 @@
 <style>
     body {
         font-family: 'Times New Roman', serif;
-        background-color: #f3f1e7; /* bej deschis */
+        background-color: #f3f1e7;
         color: #333;
         padding: 30px;
         text-align: center;
+        margin: 0;
     }
     h1 {
-        font-size: 2.8em;
-        margin-bottom: 50px;
-        color: #5a5a5a; /* gri */
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        color: #5a5a5a;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     }
     .section {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 50px;
-        background-color: #d6d3cf; /* gri-bej cald */
-        padding: 25px;
+        margin-bottom: 40px;
+        background-color: #d6d3cf;
+        padding: 20px;
         border-radius: 20px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
+        gap: 20px;
     }
     .text {
         flex: 1;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .photo {
         flex: 1;
         text-align: center;
     }
     .photo img {
+        width: 100%;
         max-width: 220px;
         border-radius: 15px;
-        border: 6px solid #c8bfae; /* ramă bej */
+        border: 6px solid #c8bfae;
         box-shadow: 0 0 15px rgba(0,0,0,0.3);
         background-color: white;
         padding: 5px;
+        height: auto;
     }
     .name {
-        font-size: 1.8em;
+        font-size: 1.6em;
         font-weight: bold;
         margin-bottom: 10px;
         color: #3f3f3f;
     }
     .dates {
         font-style: italic;
-        font-size: 1.2em;
+        font-size: 1.1em;
         color: #555;
+    }
+
+    /* 📱 Mobile view */
+    @media (max-width: 600px) {
+        .section {
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+        .text {
+            font-size: 1.1em;
+        }
+        .name {
+            font-size: 1.4em;
+        }
+        .photo img {
+            max-width: 180px;
+        }
     }
 </style>
 </head>
